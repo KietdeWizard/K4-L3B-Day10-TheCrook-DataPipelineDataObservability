@@ -30,11 +30,11 @@ Ngoài phạm vi chính, tôi bổ sung bootstrap import cho hai script, lazy im
 
 | Nhiệm vụ | Artifact/bằng chứng | Kết quả |
 |---|---|---|
-| GX quality gate baseline | `data/quality/baseline_quality_report.json` | PASS, 5/5 checks |
+| GX quality gate baseline | `data/quality/baseline_quality_report.json` | PASS, 6/6 checks |
 | Phát hiện dữ liệu bẩn | `data/quality/corrupted_quality_report.json` | FAIL, 3/5 checks; phát hiện duplicate ID và summary quá ngắn |
 | Freshness corruption | `data/quality/corrupted_freshness_report.json` | FAIL, 12/23 stale rows, 52.17% |
 | Sáu kịch bản corruption | `data/results/corruption_log.json` | Đủ 6/6 kịch bản, có danh sách DOI bị tác động |
-| Phục hồi chất lượng | `data/quality/repaired_quality_report.json` | PASS, 5/5 checks |
+| Phục hồi chất lượng | `data/quality/repaired_quality_report.json` | PASS, 6/6 checks |
 | Phục hồi freshness | `data/quality/repaired_freshness_report.json` | PASS, 1/24 stale rows, 4.17% |
 | So sánh ba trạng thái | `data/reports/corruption_report.md` | Baseline → Corrupted → Repaired bằng số liệu thực |
 
@@ -94,12 +94,12 @@ Repair không sửa ngược từng dòng corrupted. Pipeline đọc lại `data
 | `mean_token_f1` | 1.0000 | 0.4814 | 1.0000 | Noise/drop/truncate làm câu trả lời sai rõ rệt |
 | `judge_accuracy` | 1.0000 | 0.5000 | 1.0000 | Giảm một nửa rồi phục hồi |
 | `mean_judge_score` | 5.0000 | 2.6000 | 5.0000 | Chất lượng câu trả lời giảm 2.4 điểm |
-| Quality checks | PASS 5/5 | FAIL 3/5 | PASS 5/5 | Phát hiện duplicate và summary rỗng |
+| Quality checks | PASS 6/6 | FAIL 4/6 | PASS 6/6 | Phát hiện duplicate và summary rỗng |
 | Freshness status | PASS 4.17% stale | FAIL 52.17% stale | PASS 4.17% stale | Vượt ngưỡng 25% ở trạng thái corrupted |
 
 Chuỗi bằng chứng thứ nhất: drop/noise/truncate/duplicate/stale → GX và freshness cùng báo FAIL → Hit Rate giảm từ 1.0 xuống 0.4 và Token F1 giảm xuống 0.4814.
 
-Chuỗi bằng chứng thứ hai: rebuild từ raw snapshot → GX 5/5 và freshness 4.17% stale → toàn bộ metrics repaired bằng baseline. Nhóm lỗi ảnh hưởng retrieval rõ nhất là drop latest kết hợp truncate title vì năm ground-truth mới nhất bị loại và exact-title lookup của các record còn lại bị phá vỡ.
+Chuỗi bằng chứng thứ hai: rebuild từ raw snapshot → GX 6/6 và freshness 4.17% stale → toàn bộ metrics repaired bằng baseline. Nhóm lỗi ảnh hưởng retrieval rõ nhất là drop latest kết hợp truncate title vì năm ground-truth mới nhất bị loại và exact-title lookup của các record còn lại bị phá vỡ.
 
 ## 9. Điều học được và hướng cải thiện
 

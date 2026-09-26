@@ -16,7 +16,13 @@ from pipelines.phase1 import run_phase1_pipeline
 from retrieval.index import LocalEmbeddingIndex
 
 
-def run_corruption_pipeline(settings: Settings) -> dict[str, Any]:
+def repair_from_raw_snapshot(settings: Settings) -> pd.DataFrame:
+    """Rebuild clean data from the immutable raw-record lineage anchor."""
+    raw_records = load_raw_records(settings.paths.raw_records_json)
+    return build_clean_dataframe(raw_records, now_utc())
+
+
+def run_corruption_flow_pipeline(settings: Settings) -> dict[str, Any]:
     """Evaluate deterministic corruption and idempotent raw-snapshot repair."""
     baseline_required = [
         settings.paths.clean_json,
@@ -55,8 +61,7 @@ def run_corruption_pipeline(settings: Settings) -> dict[str, Any]:
 
     # Repair is a clean rebuild from the immutable lineage anchor, never an
     # in-place attempt to reverse individual corruptions.
-    raw_records = load_raw_records(settings.paths.raw_records_json)
-    repaired_df = build_clean_dataframe(raw_records, now_utc())
+    repaired_df = repair_from_raw_snapshot(settings)
     write_csv(repaired_df, settings.paths.repaired_clean_csv)
     write_json(settings.paths.repaired_clean_json, repaired_df.to_dict(orient="records"))
     repaired_index = LocalEmbeddingIndex.build(
@@ -100,8 +105,12 @@ def run_corruption_pipeline(settings: Settings) -> dict[str, Any]:
     }
 
 
+# Backward-compatible alias for the first integration draft.
+run_corruption_pipeline = run_corruption_flow_pipeline
+
+
 def main() -> None:
-    result = run_corruption_pipeline(load_settings())
+    result = run_corruption_flow_pipeline(load_settings())
     print("Corruption and repair pipeline completed.")
     print("State       Retrieval hit rate  Mean token F1")
     for label, key in (

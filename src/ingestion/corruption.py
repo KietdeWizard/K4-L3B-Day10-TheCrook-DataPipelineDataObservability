@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from math import ceil
 from pathlib import Path
 
@@ -65,9 +65,14 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
     stale_count = max(1, ceil(len(working) * 0.40))
     stale_indexes = list(range(len(working) - stale_count, len(working)))
     stale_ids = working.loc[stale_indexes, "paper_id"].astype(str).tolist()
-    working.loc[stale_indexes, "published"] = "2000-01-01"
-    working.loc[stale_indexes, "age_days"] = 9_999
-    scenarios.append(_event("stale_date", stale_ids, "Moved publication dates beyond the freshness SLA"))
+    stale_dates = pd.to_datetime(
+        working.loc[stale_indexes, "published"], errors="coerce", utc=True
+    ) - timedelta(days=365)
+    working.loc[stale_indexes, "published"] = stale_dates.dt.strftime("%Y-%m-%d").values
+    working.loc[stale_indexes, "age_days"] = (
+        pd.to_numeric(working.loc[stale_indexes, "age_days"], errors="coerce") + 365
+    ).values
+    scenarios.append(_event("stale_date", stale_ids, "Moved publication dates back by 365 days"))
 
     duplicate_count = max(1, ceil(len(working) * 0.20))
     duplicate_rows = working.iloc[-duplicate_count:].copy(deep=True)

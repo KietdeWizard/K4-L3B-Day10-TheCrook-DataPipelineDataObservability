@@ -17,8 +17,8 @@ All three evaluations use the same 10-question test set, embedding model and ret
 | State | GX quality gate | Successful checks | Freshness SLA | Stale rows | Stale ratio |
 |---|---|---:|---|---:|---:|
 | Baseline | See `baseline_quality_report.json` | — | See `freshness_report.json` | — | — |
-| Corrupted | **FAIL** | 3/5 | **FAIL** | 12/23 | 52.17% |
-| Repaired | **PASS** | 5/5 | **PASS** | 1/24 | 4.17% |
+| Corrupted | **FAIL** | 4/6 | **FAIL** | 12/23 | 52.17% |
+| Repaired | **PASS** | 6/6 | **PASS** | 1/24 | 4.17% |
 
 ## Impact analysis
 

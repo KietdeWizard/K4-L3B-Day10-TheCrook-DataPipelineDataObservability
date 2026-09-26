@@ -16,7 +16,13 @@ MAX_STALE_RATIO = 0.25
 
 def run_data_quality_checks(df: pd.DataFrame, settings: Settings, report_name: str) -> dict[str, Any]:
     """Validate the clean-data contract with the Great Expectations 1.x API."""
-    required_columns = {"paper_id", "title", "summary", "age_days"}
+    required_columns = {
+        "paper_id",
+        "title",
+        "summary",
+        "text_for_embedding",
+        "age_days",
+    }
     missing_columns = sorted(required_columns - set(df.columns))
     if missing_columns:
         raise ValueError(f"Quality checks require columns: {', '.join(missing_columns)}")
@@ -33,19 +39,20 @@ def run_data_quality_checks(df: pd.DataFrame, settings: Settings, report_name: s
     )
     batch = batch_definition.get_batch(batch_parameters={"dataframe": df})
 
-    # Five validations cover the four mandatory expectation types; the not-null
-    # expectation is deliberately applied to both identity and title columns.
+    # Six validations cover the four mandatory expectation types. The not-null
+    # expectation is applied to all three critical columns required by the lab.
     expectations = [
         gx.expectations.ExpectTableRowCountToBeBetween(
-            min_value=1,
-            max_value=max(settings.max_results * 2, 1),
+            min_value=5,
+            max_value=5_000,
         ),
         gx.expectations.ExpectColumnValuesToNotBeNull(column="paper_id"),
-        gx.expectations.ExpectColumnValuesToBeUnique(column="paper_id"),
         gx.expectations.ExpectColumnValuesToNotBeNull(column="title"),
+        gx.expectations.ExpectColumnValuesToNotBeNull(column="text_for_embedding"),
+        gx.expectations.ExpectColumnValuesToBeUnique(column="paper_id"),
         gx.expectations.ExpectColumnValueLengthsToBeBetween(
             column="summary",
-            min_value=20,
+            min_value=30,
             max_value=20_000,
         ),
     ]

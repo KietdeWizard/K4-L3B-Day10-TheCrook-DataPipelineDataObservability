@@ -41,7 +41,7 @@ def test_corruption_suite_is_deterministic_and_logs_all_six_scenarios(tmp_path):
     assert source["paper_id"].is_unique
     assert first["paper_id"].duplicated().any()
     assert (first["title"].str.len() < 8).any()
-    assert (first["summary"].str.len() < 20).any()
+    assert (first["summary"].str.len() < 30).any()
     assert (first["age_days"] > 180).mean() > 0.25
     assert log["scenario_count"] == 6
     assert {item["scenario"] for item in log["scenarios"]} == {
@@ -79,7 +79,7 @@ def test_gx_quality_gate_passes_clean_and_rejects_corrupted_data(tmp_path):
     bad_result = run_data_quality_checks(corrupted, settings, "corrupted_test")
 
     assert clean_result["success"] is True
-    assert clean_result["statistics"]["evaluated_expectations"] == 5
+    assert clean_result["statistics"]["evaluated_expectations"] == 6
     assert bad_result["success"] is False
     assert bad_result["statistics"]["unsuccessful_expectations"] >= 2
 

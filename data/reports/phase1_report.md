@@ -28,14 +28,15 @@ This report is generated from the pipeline artifacts; values are not entered man
 
 Overall status: **PASS**
 
-Successful checks: **5/5**
+Successful checks: **6/6**
 
 | Expectation | Column | Status |
 |---|---|---|
 | expect_table_row_count_to_be_between | — | PASS |
 | expect_column_values_to_not_be_null | paper_id | PASS |
-| expect_column_values_to_be_unique | paper_id | PASS |
 | expect_column_values_to_not_be_null | title | PASS |
+| expect_column_values_to_not_be_null | text_for_embedding | PASS |
+| expect_column_values_to_be_unique | paper_id | PASS |
 | expect_column_value_lengths_to_be_between | summary | PASS |
 
 ## Freshness SLA

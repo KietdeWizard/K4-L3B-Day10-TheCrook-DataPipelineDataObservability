@@ -276,7 +276,7 @@
       "Data Systems"
     ],
     "primary_category": "Software Engineering",
-    "published": "2000-01-01",
+    "published": "2025-06-02",
     "updated": "2026-06-02",
     "abs_url": "https://doi.org/10.1145/3637528.3671814",
     "pdf_url": "https://doi.org/10.1145/3637528.3671814",
@@ -284,8 +284,8 @@
     "authors_joined": "Anh Tran, Quoc Pham",
     "categories_joined": "Software Engineering, Data Systems",
     "summary_chars": 296,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Advanced Perspectives on Data Observability and Quality Gates for Production RAG Systems\nAuthors: Anh Tran, Quoc Pham\nPublished: 2000-01-01\nCategories: Software Engineering, Data Systems\nSummary: An extended empirical study on ilent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors. We introduce automated quality gates using Great Expectations 1.x to catch stale and malformed embeddings before serving Further analysis on scaling parameters."
+    "age_days": 481,
+    "text_for_embedding": "Title: Advanced Perspectives on Data Observability and Quality Gates for Production RAG Systems\nAuthors: Anh Tran, Quoc Pham\nPublished: 2025-06-02\nCategories: Software Engineering, Data Systems\nSummary: An extended empirical study on ilent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors. We introduce automated quality gates using Great Expectations 1.x to catch stale and malformed embeddings before serving Further analysis on scaling parameters."
   },
   {
     "paper_id": "10.1145/3637528.3671813",
@@ -300,7 +300,7 @@
       "Information Retrieval"
     ],
     "primary_category": "Artificial Intelligence",
-    "published": "2000-01-01",
+    "published": "2025-06-01",
     "updated": "2026-06-01",
     "abs_url": "https://doi.org/10.1145/3637528.3671813",
     "pdf_url": "https://doi.org/10.1145/3637528.3671813",
@@ -308,8 +308,8 @@
     "authors_joined": "Minh Nguyen, Hoang Le",
     "categories_joined": "Artificial Intelligence, Information Retrieval",
     "summary_chars": 1372,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Advanced Perspectives on Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks\nAuthors: Minh Nguyen, Hoang Le\nPublished: 2000-01-01\nCategories: Artificial Intelligence, Information Retrieval\nSummary: An extended empirical study on etrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices Further analysis on scaling parameters. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 482,
+    "text_for_embedding": "Title: Advanced Perspectives on Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks\nAuthors: Minh Nguyen, Hoang Le\nPublished: 2025-06-01\nCategories: Artificial Intelligence, Information Retrieval\nSummary: An extended empirical study on etrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices Further analysis on scaling parameters. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   },
   {
     "paper_id": "10.1145/3637528.3671801",
@@ -324,7 +324,7 @@
       "Information Retrieval"
     ],
     "primary_category": "Artificial Intelligence",
-    "published": "2000-01-01",
+    "published": "2025-05-20",
     "updated": "2026-05-20",
     "abs_url": "https://doi.org/10.1145/3637528.3671801",
     "pdf_url": "https://doi.org/10.1145/3637528.3671801",
@@ -332,8 +332,8 @@
     "authors_joined": "Minh Nguyen, Hoang Le",
     "categories_joined": "Artificial Intelligence, Information Retrieval",
     "summary_chars": 223,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks\nAuthors: Minh Nguyen, Hoang Le\nPublished: 2000-01-01\nCategories: Artificial Intelligence, Information Retrieval\nSummary: Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices."
+    "age_days": 494,
+    "text_for_embedding": "Title: Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks\nAuthors: Minh Nguyen, Hoang Le\nPublished: 2025-05-20\nCategories: Artificial Intelligence, Information Retrieval\nSummary: Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices."
   },
   {
     "paper_id": "10.1145/3637528.3671811",
@@ -348,7 +348,7 @@
       "Algorithms"
     ],
     "primary_category": "Information Retrieval",
-    "published": "2000-01-01",
+    "published": "2025-05-14",
     "updated": "2026-05-14",
     "abs_url": "https://doi.org/10.1145/3637528.3671811",
     "pdf_url": "https://doi.org/10.1145/3637528.3671811",
@@ -356,8 +356,8 @@
     "authors_joined": "Dat Tran, Lan Pham",
     "categories_joined": "Information Retrieval, Algorithms",
     "summary_chars": 1279,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Hybrid Search Architectures: Combining BM25 with Dense Representations\nAuthors: Dat Tran, Lan Pham\nPublished: 2000-01-01\nCategories: Information Retrieval, Algorithms\nSummary: Dense vector search excels at conceptual similarity but struggles with exact acronyms and serial numbers. Reciprocal Rank Fusion of sparse lexical scores and dense embeddings achieves optimal recall. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 500,
+    "text_for_embedding": "Title: Hybrid Search Architectures: Combining BM25 with Dense Representations\nAuthors: Dat Tran, Lan Pham\nPublished: 2025-05-14\nCategories: Information Retrieval, Algorithms\nSummary: Dense vector search excels at conceptual similarity but struggles with exact acronyms and serial numbers. Reciprocal Rank Fusion of sparse lexical scores and dense embeddings achieves optimal recall. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   },
   {
     "paper_id": "10.1145/3637528.3671806",
@@ -372,7 +372,7 @@
       "Information Systems"
     ],
     "primary_category": "Databases",
-    "published": "2000-01-01",
+    "published": "2025-05-02",
     "updated": "2026-05-02",
     "abs_url": "https://doi.org/10.1145/3637528.3671806",
     "pdf_url": "https://doi.org/10.1145/3637528.3671806",
@@ -380,8 +380,8 @@
     "authors_joined": "Huy Dinh, Trang Vo",
     "categories_joined": "Databases, Information Systems",
     "summary_chars": 206,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Semantic Layer Integration for Agentic Text-to-SQL Pipelines\nAuthors: Huy Dinh, Trang Vo\nPublished: 2000-01-01\nCategories: Databases, Information Systems\nSummary: Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy."
+    "age_days": 512,
+    "text_for_embedding": "Title: Semantic Layer Integration for Agentic Text-to-SQL Pipelines\nAuthors: Huy Dinh, Trang Vo\nPublished: 2025-05-02\nCategories: Databases, Information Systems\nSummary: Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy."
   },
   {
     "paper_id": "10.1145/3637528.3671809",
@@ -396,7 +396,7 @@
       "Natural Language Processing"
     ],
     "primary_category": "Information Retrieval",
-    "published": "2000-01-01",
+    "published": "2025-04-30",
     "updated": "2026-04-30",
     "abs_url": "https://doi.org/10.1145/3637528.3671809",
     "pdf_url": "https://doi.org/10.1145/3637528.3671809",
@@ -404,8 +404,8 @@
     "authors_joined": "Long Trinh, Ha Chu",
     "categories_joined": "Information Retrieval, Natural Language Processing",
     "summary_chars": 1277,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Chunking Strategies for Technical Documentation Retrieval\nAuthors: Long Trinh, Ha Chu\nPublished: 2000-01-01\nCategories: Information Retrieval, Natural Language Processing\nSummary: Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 514,
+    "text_for_embedding": "Title: Chunking Strategies for Technical Documentation Retrieval\nAuthors: Long Trinh, Ha Chu\nPublished: 2025-04-30\nCategories: Information Retrieval, Natural Language Processing\nSummary: Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   },
   {
     "paper_id": "10.1145/3637528.3671803",
@@ -420,7 +420,7 @@
       "Information Systems"
     ],
     "primary_category": "Databases",
-    "published": "2000-01-01",
+    "published": "2025-04-18",
     "updated": "2026-04-18",
     "abs_url": "https://doi.org/10.1145/3637528.3671803",
     "pdf_url": "https://doi.org/10.1145/3637528.3671803",
@@ -428,8 +428,8 @@
     "authors_joined": "Duc Vu, Thao Dang",
     "categories_joined": "Databases, Information Systems",
     "summary_chars": 215,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing\nAuthors: Duc Vu, Thao Dang\nPublished: 2000-01-01\nCategories: Databases, Information Systems\nSummary: Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations. This paper designs an idempotent index synchronization protocol that guarantees complete purges of outdated vector artifacts."
+    "age_days": 526,
+    "text_for_embedding": "Title: Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing\nAuthors: Duc Vu, Thao Dang\nPublished: 2025-04-18\nCategories: Databases, Information Systems\nSummary: Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations. This paper designs an idempotent index synchronization protocol that guarantees complete purges of outdated vector artifacts."
   },
   {
     "paper_id": "10.1145/3637528.3671805",
@@ -444,7 +444,7 @@
       "Evaluation Methodology"
     ],
     "primary_category": "Natural Language Processing",
-    "published": "2000-01-01",
+    "published": "2025-03-28",
     "updated": "2026-03-28",
     "abs_url": "https://doi.org/10.1145/3637528.3671805",
     "pdf_url": "https://doi.org/10.1145/3637528.3671805",
@@ -452,8 +452,8 @@
     "authors_joined": "Tuan Phan, Mai Bui",
     "categories_joined": "Natural Language Processing, Evaluation Methodology",
     "summary_chars": 1286,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Evaluating Retrieval Precision with Token F1 and LLM Judges\nAuthors: Tuan Phan, Mai Bui\nPublished: 2000-01-01\nCategories: Natural Language Processing, Evaluation Methodology\nSummary: Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 547,
+    "text_for_embedding": "Title: Evaluating Retrieval Precision with Token F1 and LLM Judges\nAuthors: Tuan Phan, Mai Bui\nPublished: 2025-03-28\nCategories: Natural Language Processing, Evaluation Methodology\nSummary: Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   },
   {
     "paper_id": "10.1145/3637528.3671806",
@@ -468,7 +468,7 @@
       "Information Systems"
     ],
     "primary_category": "Databases",
-    "published": "2000-01-01",
+    "published": "2025-05-02",
     "updated": "2026-05-02",
     "abs_url": "https://doi.org/10.1145/3637528.3671806",
     "pdf_url": "https://doi.org/10.1145/3637528.3671806",
@@ -476,8 +476,8 @@
     "authors_joined": "Huy Dinh, Trang Vo",
     "categories_joined": "Databases, Information Systems",
     "summary_chars": 206,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Semantic Layer Integration for Agentic Text-to-SQL Pipelines\nAuthors: Huy Dinh, Trang Vo\nPublished: 2000-01-01\nCategories: Databases, Information Systems\nSummary: Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy."
+    "age_days": 512,
+    "text_for_embedding": "Title: Semantic Layer Integration for Agentic Text-to-SQL Pipelines\nAuthors: Huy Dinh, Trang Vo\nPublished: 2025-05-02\nCategories: Databases, Information Systems\nSummary: Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy."
   },
   {
     "paper_id": "10.1145/3637528.3671809",
@@ -492,7 +492,7 @@
       "Natural Language Processing"
     ],
     "primary_category": "Information Retrieval",
-    "published": "2000-01-01",
+    "published": "2025-04-30",
     "updated": "2026-04-30",
     "abs_url": "https://doi.org/10.1145/3637528.3671809",
     "pdf_url": "https://doi.org/10.1145/3637528.3671809",
@@ -500,8 +500,8 @@
     "authors_joined": "Long Trinh, Ha Chu",
     "categories_joined": "Information Retrieval, Natural Language Processing",
     "summary_chars": 1277,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Chunking Strategies for Technical Documentation Retrieval\nAuthors: Long Trinh, Ha Chu\nPublished: 2000-01-01\nCategories: Information Retrieval, Natural Language Processing\nSummary: Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 514,
+    "text_for_embedding": "Title: Chunking Strategies for Technical Documentation Retrieval\nAuthors: Long Trinh, Ha Chu\nPublished: 2025-04-30\nCategories: Information Retrieval, Natural Language Processing\nSummary: Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   },
   {
     "paper_id": "10.1145/3637528.3671803",
@@ -516,7 +516,7 @@
       "Information Systems"
     ],
     "primary_category": "Databases",
-    "published": "2000-01-01",
+    "published": "2025-04-18",
     "updated": "2026-04-18",
     "abs_url": "https://doi.org/10.1145/3637528.3671803",
     "pdf_url": "https://doi.org/10.1145/3637528.3671803",
@@ -524,8 +524,8 @@
     "authors_joined": "Duc Vu, Thao Dang",
     "categories_joined": "Databases, Information Systems",
     "summary_chars": 215,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing\nAuthors: Duc Vu, Thao Dang\nPublished: 2000-01-01\nCategories: Databases, Information Systems\nSummary: Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations. This paper designs an idempotent index synchronization protocol that guarantees complete purges of outdated vector artifacts."
+    "age_days": 526,
+    "text_for_embedding": "Title: Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing\nAuthors: Duc Vu, Thao Dang\nPublished: 2025-04-18\nCategories: Databases, Information Systems\nSummary: Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations. This paper designs an idempotent index synchronization protocol that guarantees complete purges of outdated vector artifacts."
   },
   {
     "paper_id": "10.1145/3637528.3671805",
@@ -540,7 +540,7 @@
       "Evaluation Methodology"
     ],
     "primary_category": "Natural Language Processing",
-    "published": "2000-01-01",
+    "published": "2025-03-28",
     "updated": "2026-03-28",
     "abs_url": "https://doi.org/10.1145/3637528.3671805",
     "pdf_url": "https://doi.org/10.1145/3637528.3671805",
@@ -548,7 +548,7 @@
     "authors_joined": "Tuan Phan, Mai Bui",
     "categories_joined": "Natural Language Processing, Evaluation Methodology",
     "summary_chars": 1286,
-    "age_days": 9999,
-    "text_for_embedding": "Title: Evaluating Retrieval Precision with Token F1 and LLM Judges\nAuthors: Tuan Phan, Mai Bui\nPublished: 2000-01-01\nCategories: Natural Language Processing, Evaluation Methodology\nSummary: Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
+    "age_days": 547,
+    "text_for_embedding": "Title: Evaluating Retrieval Precision with Token F1 and LLM Judges\nAuthors: Tuan Phan, Mai Bui\nPublished: 2025-03-28\nCategories: Natural Language Processing, Evaluation Methodology\nSummary: Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions. zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a zxqv corruption-noise-9f3a"
   }
 ]
