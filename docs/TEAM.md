@@ -12,7 +12,7 @@
 | STT | Họ và tên | MSSV | Email | Vai trò | Phạm vi phụ trách chính | Báo cáo cá nhân |
 |---:|---|---|---|---|---|---|
 | 1 | Nguyễn Minh Kiệt | `2A202602373` | Chưa cung cấp | Nhóm trưởng / Data Foundation Owner | Làm trước phần ingestion, cleaning, benchmark test set và baseline pipeline; bàn giao code cùng artifacts cho thành viên 2 | `report/2A202602373_NguyenMinhKiet.md` |
-| 2 | Đào Minh Hiếu | `2A202602561` | Chưa cung cấp | Thành viên / Completion & Integration Owner | Nhận phần baseline từ thành viên 1, hoàn thiện observability, corruption/repair, chạy toàn tuyến và merge lên `main` | `report/2A202602561_DaoMinhHieu.md` |
+| 2 | Đào Minh Hiếu | `2A202602561` | `hdao13789@gmail.com` | Thành viên / Completion & Integration Owner | Nhận phần baseline từ thành viên 1, hoàn thiện observability, corruption/repair, chạy toàn tuyến và merge lên `main` | `report/2A202602561_DaoMinhHieu.md` |
 
 ---
 

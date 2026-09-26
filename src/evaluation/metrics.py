@@ -7,7 +7,6 @@ import sys
 import types
 from typing import Any
 
-from datasets import Dataset
 from pydantic import BaseModel, Field
 
 from core.config import Settings
@@ -59,6 +58,8 @@ Return:
 - short reasoning
 """.strip()
     try:
+        from datasets import Dataset
+
         llm = build_llm(settings=settings, temperature=0.0).with_structured_output(JudgeVerdict)
         return llm.invoke(prompt)
     except Exception:

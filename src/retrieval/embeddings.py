@@ -8,7 +8,12 @@ from sentence_transformers import SentenceTransformer
 
 @lru_cache(maxsize=4)
 def _load_model(model_name: str) -> SentenceTransformer:
-    return SentenceTransformer(model_name)
+    try:
+        # Prefer a previously downloaded model so reruns remain reproducible
+        # when the source API or Hugging Face is unavailable.
+        return SentenceTransformer(model_name, local_files_only=True)
+    except OSError:
+        return SentenceTransformer(model_name)
 
 
 class MiniLMEmbeddings(Embeddings):
