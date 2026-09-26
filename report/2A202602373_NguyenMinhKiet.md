@@ -6,6 +6,7 @@
 |---|---|
 | Họ và tên | Nguyễn Minh Kiệt |
 | MSSV | `2A202602373` |
+| Email | `kietminh2001@gmail.com` |
 | Khóa/Lớp | K4-L3B |
 | Tên nhóm | TheCrook |
 | Vai trò chính | Nhóm trưởng / Data Foundation & Baseline Pipeline Owner |
