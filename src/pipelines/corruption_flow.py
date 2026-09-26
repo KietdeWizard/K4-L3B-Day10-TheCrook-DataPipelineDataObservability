@@ -35,6 +35,8 @@ def run_corruption_flow_pipeline(settings: Settings) -> dict[str, Any]:
         run_phase1_pipeline(settings)
 
     baseline_metrics = read_json(settings.paths.baseline_metrics)
+    baseline_quality = read_json(settings.paths.baseline_quality_report)
+    baseline_freshness = read_json(settings.paths.freshness_report)
     clean_df = pd.DataFrame(read_json(settings.paths.clean_json))
 
     corrupted_df = corrupt_clean_dataframe(clean_df, settings.paths.corruption_log)
@@ -88,8 +90,10 @@ def run_corruption_flow_pipeline(settings: Settings) -> dict[str, Any]:
         baseline_metrics,
         corrupted_evaluation.summary,
         repaired_evaluation.summary,
+        baseline_quality,
         corrupted_quality,
         repaired_quality,
+        baseline_freshness,
         corrupted_freshness,
         repaired_freshness,
     )

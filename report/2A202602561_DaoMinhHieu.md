@@ -31,7 +31,7 @@ Ngoài phạm vi chính, tôi bổ sung bootstrap import cho hai script, lazy im
 | Nhiệm vụ | Artifact/bằng chứng | Kết quả |
 |---|---|---|
 | GX quality gate baseline | `data/quality/baseline_quality_report.json` | PASS, 6/6 checks |
-| Phát hiện dữ liệu bẩn | `data/quality/corrupted_quality_report.json` | FAIL, 3/5 checks; phát hiện duplicate ID và summary quá ngắn |
+| Phát hiện dữ liệu bẩn | `data/quality/corrupted_quality_report.json` | FAIL, 4/6 checks; phát hiện duplicate ID và summary quá ngắn |
 | Freshness corruption | `data/quality/corrupted_freshness_report.json` | FAIL, 12/23 stale rows, 52.17% |
 | Sáu kịch bản corruption | `data/results/corruption_log.json` | Đủ 6/6 kịch bản, có danh sách DOI bị tác động |
 | Phục hồi chất lượng | `data/quality/repaired_quality_report.json` | PASS, 6/6 checks |
@@ -42,7 +42,7 @@ Ngoài phạm vi chính, tôi bổ sung bootstrap import cho hai script, lazy im
 
 ### Data quality và freshness
 
-Quality gate dùng đúng API Great Expectations 1.x với ephemeral context, pandas datasource, dataframe asset, whole-dataframe batch và các expectation bắt buộc: row count, not-null, unique và string length. `paper_id` được kiểm tra cả completeness lẫn uniqueness; `title` được kiểm tra not-null; `summary` phải dài từ 20 đến 20.000 ký tự.
+Quality gate dùng đúng API Great Expectations 1.x với ephemeral context, pandas datasource, dataframe asset, whole-dataframe batch và các expectation bắt buộc: row count, not-null, unique và string length. `paper_id` được kiểm tra cả completeness lẫn uniqueness; `title` và `text_for_embedding` được kiểm tra not-null; `summary` phải dài từ 30 đến 20.000 ký tự.
 
 Freshness là tín hiệu riêng: một dòng được coi là stale khi `age_days > 180`. Dataset chỉ đạt SLA khi tỷ lệ stale không vượt 25%, không có ngày hoặc tuổi dữ liệu không hợp lệ, và dataset không rỗng.
 

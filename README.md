@@ -18,10 +18,10 @@
 
 ---
 
-## Repo có sẵn gì? (Scaffolded Baseline)
+## Repo đã hoàn thiện
 
 - `data/raw/` — Snapshot offline Crossref API (`crossref_response.json`)
-- `src/` — Khung pipeline thu thập, embedding MiniLM, đánh giá metrics (có `TODO(student)`)
+- `src/` — Pipeline thu thập, cleaning, MiniLM/ChromaDB, evaluation, observability và repair đã hoàn thiện
 - `script/` — Entrypoints: `run_phase1.py`, `run_corruption_flow.py`
 
 ## Học viên cần làm gì?

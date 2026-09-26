@@ -93,8 +93,10 @@ def generate_corruption_report(
     baseline_metrics: dict[str, Any],
     corrupted_metrics: dict[str, Any],
     repaired_metrics: dict[str, Any],
+    baseline_quality: dict[str, Any],
     corrupted_quality: dict[str, Any],
     repaired_quality: dict[str, Any],
+    baseline_freshness: dict[str, Any],
     corrupted_freshness: dict[str, Any],
     repaired_freshness: dict[str, Any],
 ) -> None:
@@ -142,7 +144,7 @@ All three evaluations use the same 10-question test set, embedding model and ret
 
 | State | GX quality gate | Successful checks | Freshness SLA | Stale rows | Stale ratio |
 |---|---|---:|---|---:|---:|
-| Baseline | See `baseline_quality_report.json` | — | See `freshness_report.json` | — | — |
+| Baseline | **{'PASS' if baseline_quality.get('success') else 'FAIL'}** | {_quality_score(baseline_quality)} | **{'PASS' if baseline_freshness.get('is_fresh') else 'FAIL'}** | {baseline_freshness.get('stale_rows', 'N/A')}/{baseline_freshness.get('total_rows', 'N/A')} | {_format_percent(baseline_freshness.get('stale_ratio'))} |
 | Corrupted | **{'PASS' if corrupted_quality.get('success') else 'FAIL'}** | {_quality_score(corrupted_quality)} | **{'PASS' if corrupted_freshness.get('is_fresh') else 'FAIL'}** | {corrupted_freshness.get('stale_rows', 'N/A')}/{corrupted_freshness.get('total_rows', 'N/A')} | {_format_percent(corrupted_freshness.get('stale_ratio'))} |
 | Repaired | **{'PASS' if repaired_quality.get('success') else 'FAIL'}** | {_quality_score(repaired_quality)} | **{'PASS' if repaired_freshness.get('is_fresh') else 'FAIL'}** | {repaired_freshness.get('stale_rows', 'N/A')}/{repaired_freshness.get('total_rows', 'N/A')} | {_format_percent(repaired_freshness.get('stale_ratio'))} |
 

@@ -101,11 +101,13 @@ def test_comparison_report_has_three_states_and_computed_deltas(tmp_path):
                       "stale_ratio": 0.0}
 
     generate_corruption_report(
-        output, baseline, corrupted, repaired, quality_bad, quality_good,
-        freshness_bad, freshness_good,
+        output, baseline, corrupted, repaired,
+        quality_good, quality_bad, quality_good,
+        freshness_good, freshness_bad, freshness_good,
     )
 
     report = output.read_text(encoding="utf-8")
     assert "Baseline vs Corrupted vs Repaired" in report
     assert "-0.7000" in report
     assert "Idempotent Repair" in report
+    assert "| Baseline | **PASS** | 5/5 | **PASS** | 0/24 | 0.00% |" in report

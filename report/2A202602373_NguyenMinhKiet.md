@@ -19,7 +19,7 @@
 | Crossref ingestion | `src/ingestion/crossref.py` | Crossref payload hoặc snapshot offline | Hai raw JSON artifacts, 24 `PaperRecord` | Hoàn thành và đã kiểm tra |
 | Cleaning/data modeling | `src/ingestion/cleaning.py` — `build_clean_dataframe` | Danh sách `PaperRecord`, thời điểm chạy | Clean dataframe, CSV và JSON | Hoàn thành và đã kiểm tra |
 | Evaluation set | `src/evaluation/testset.py` — `build_test_set` | Clean dataframe | `data/eval/test_set.json` gồm 10 câu | Hoàn thành và đã kiểm tra |
-| Baseline orchestration | `src/pipelines/phase1.py` — `run_phase1_pipeline` | Settings và các module pipeline | Baseline artifacts, metrics và report | Đã triển khai; chờ module observability/reporting của thành viên 2 để chạy end-to-end |
+| Baseline orchestration | `src/pipelines/phase1.py` — `run_phase1_pipeline` | Settings và các module pipeline | Baseline artifacts, metrics và report | Hoàn thành, đã chạy end-to-end |
 
 Phần việc được bàn giao cho Đào Minh Hiếu là clean schema, evaluation-set contract và baseline orchestration. Hiếu tiếp tục hoàn thiện Great Expectations, freshness, reporting, corruption/repair và chạy tích hợp cuối.
 
@@ -31,7 +31,7 @@ Phần việc được bàn giao cho Đào Minh Hiếu là clean schema, evaluat
 | Chuẩn hóa dữ liệu | `build_clean_dataframe` | 24 dòng, 24 `paper_id` duy nhất | Kiểm tra row count và `nunique()` |
 | Tạo benchmark | `build_test_set` | 10 câu, ID duy nhất | Đọc `data/eval/test_set.json` |
 | Phân bổ dạng câu hỏi | `data/eval/test_set.json` | summary=3, authors=3, date=2, categories=2 | Đếm `question_type` |
-| Nối baseline pipeline | `run_phase1_pipeline` | Ingest → clean → index → test set → evaluate → quality/freshness → report | Compile thành công; end-to-end đang chờ module thành viên 2 |
+| Nối baseline pipeline | `run_phase1_pipeline` | Ingest → clean → index → test set → evaluate → quality/freshness → report | Exit code 0; Hit Rate 1.0, Token F1 1.0, GX 6/6, freshness PASS |
 
 Artifacts đã tạo và xác minh:
 
@@ -90,7 +90,7 @@ python -c "from core.config import load_settings; from ingestion.crossref import
 - **Nguyên nhân:** exception thuộc `requests.exceptions`, không phải thuộc tính top-level cần sử dụng trực tiếp.
 - **Cách xử lý:** import `RequestException` từ `requests.exceptions` và dùng nhất quán trong retry/fallback.
 - **Xác minh:** giả lập request offline và nhận kết quả `fallback_records=24`.
-- **Blocker còn lại:** máy làm việc hiện chưa có Python/.venv hoàn chỉnh; Phase 1 cũng chưa thể chạy end-to-end cho đến khi `quality.py` và `reporting.py` của thành viên 2 được hoàn thiện.
+- **Blocker còn lại:** không có blocker bắt buộc; model MiniLM đã được cache và cả hai pipeline đã chạy exit code 0.
 
 ## 7. Hiểu biết về luồng end-to-end
 
@@ -102,18 +102,18 @@ python -c "from core.config import load_settings; from ingestion.crossref import
 
 ## 8. Phân tích kết quả
 
-Các metrics dưới đây chưa được tạo vì phần observability/reporting và corruption flow thuộc thành viên 2 chưa hoàn thiện. Không điền số liệu giả trước khi pipeline thực tế chạy xong.
+Các metrics dưới đây được đối chiếu trực tiếp từ artifacts sinh bởi lần chạy end-to-end cuối.
 
 | Metric/signal | Baseline | Corrupted | Repaired | Nhận xét |
 |---|---:|---:|---:|---|
-| `retrieval_hit_rate` | N/A | N/A | N/A | Chờ chạy toàn tuyến |
-| `mean_token_f1` | N/A | N/A | N/A | Chờ chạy toàn tuyến |
-| `judge_accuracy` | N/A | N/A | N/A | Chờ chạy toàn tuyến |
-| `mean_judge_score` | N/A | N/A | N/A | Chờ chạy toàn tuyến |
-| Quality checks | N/A | N/A | N/A | Chờ module observability |
-| Freshness status | N/A | N/A | N/A | Chờ module observability |
+| `retrieval_hit_rate` | 1.0000 | 0.4000 | 1.0000 | Giảm 60% rồi phục hồi hoàn toàn |
+| `mean_token_f1` | 1.0000 | 0.4814 | 1.0000 | Giảm 51.86% rồi phục hồi hoàn toàn |
+| `judge_accuracy` | 1.0000 | 0.5000 | 1.0000 | Giảm 50% rồi phục hồi hoàn toàn |
+| `mean_judge_score` | 5.0000 | 2.6000 | 5.0000 | Giảm 2.4 điểm rồi phục hồi |
+| Quality checks | PASS 6/6 | FAIL 4/6 | PASS 6/6 | Phát hiện duplicate và summary rỗng |
+| Freshness status | PASS 4.17% | FAIL 52.17% | PASS 4.17% | Freshness SLA phát hiện stale-date corruption |
 
-Sau khi Hiếu hoàn thiện phần còn lại, bảng này phải được cập nhật trực tiếp từ `baseline_metrics.json`, `corrupted_metrics.json`, `repaired_metrics.json` và các quality artifacts.
+Kết quả chứng minh thay đổi metric đến từ dữ liệu vì cả ba trạng thái dùng chung test set, embedding model và `top_k`.
 
 ## 9. Điều học được và hướng cải thiện
 
@@ -128,7 +128,7 @@ Nếu có thêm thời gian, tôi sẽ bổ sung unit tests cho payload thiếu 
 - [x] Nội dung phản ánh đúng phần việc và mức hiểu của tôi.
 - [x] Tôi có thể giải thích luồng end-to-end và module phụ trách.
 - [x] Các kết quả được ghi có artifact hoặc output kiểm chứng.
-- [x] Không khai báo pipeline end-to-end thành công khi chưa chạy được.
+- [x] Chỉ khai báo pipeline end-to-end thành công sau khi cả hai entrypoint chạy exit code 0.
 - [x] Báo cáo không chứa `.env`, API key, token hoặc secret.
 - [x] Báo cáo không sao chép nguyên văn báo cáo của thành viên khác.
 
